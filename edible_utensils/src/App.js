@@ -59,6 +59,48 @@ function App() {
           <img src="/images/spoon5.png" alt="Edible Spoon" />
         </motion.div>
       </div>
+
+      {/* Features Section */}
+      <section className="features-section">
+        <h2 className="features-title">FEATURES:</h2>
+        <div className="features-container">
+          <motion.div 
+            className="feature-card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)" }}
+          >
+            <img src="/images/round spoon.png" alt="Tasty Delight" />
+            <h3>Tasty Delight</h3>
+            <p>Our products are made to enhance your meal experience, whether you’re enjoying a warm comfort dish or a chilled dessert.</p>
+          </motion.div>
+
+          <motion.div 
+            className="feature-card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)" }}
+          >
+            <img src="/images/round cup.png" alt="Nutrient-packed" />
+            <h3>Nutrient-packed</h3>
+            <p>Thoughtfully crafted with an organic fusion of sorghum and rice flour — delivering a crunchy, wholesome bite that’s as nourishing as it is sustainable.</p>
+          </motion.div>
+
+          <motion.div 
+            className="feature-card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)" }}
+          >
+            <img src="/images/round straw.png" alt="Sustainable" />
+            <h3>Sustainable</h3>
+            <p>No more single-use waste! Our products are fully biodegradable and harmless to the environment, breaking down naturally.</p>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }

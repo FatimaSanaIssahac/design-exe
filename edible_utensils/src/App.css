@@ -197,3 +197,48 @@ h1, h2, h3,.navbar,.hero-title {
     margin-top: 1rem;
   }
 }
+.features-section {
+  padding: 4rem 2rem;
+  background-color: #f9fff4;
+  text-align: center;
+}
+
+.features-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #17642f;
+  margin-bottom: 2rem;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  flex: 1 1 250px;
+  max-width: 350px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.feature-card img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  margin: 0.1rem 0;
+}
+
+.feature-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #17642f;
+  margin-bottom: 0rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
