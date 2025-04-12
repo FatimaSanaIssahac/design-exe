@@ -163,6 +163,37 @@ function App() {
     </div>
   </div>
 </section>
+      {/* Footer Section */}
+      <footer className="footer-section">
+        <div className="footer-container">
+
+          {/* Left Side Links */}
+          <div className="footer-links">
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+
+          {/* Right Side Social and Subscribe */}
+          <div className="footer-right">
+            <h3>Be in the first to know</h3>
+            <div className="social-icons">
+              <i className="fab fa-linkedin"></i>
+              <i className="fab fa-facebook"></i>
+              <i className="fab fa-x-twitter"></i>
+              <i className="fab fa-instagram"></i>
+            </div>
+
+            <div className="subscribe-form">
+              <div className="input-wrapper">
+                <input type="email" placeholder="Email Address" />
+                <button type="submit">SUBSCRIBE</button>
+              </div>
+              <p className="subscribe-note">Get updates, coupons and news</p>
+            </div>
+          </div>
+
+        </div>
+      </footer>
 
     </div>
     
