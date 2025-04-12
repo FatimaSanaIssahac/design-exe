@@ -1,63 +1,81 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './App.css';
 
+
 function App() {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
-    <div className="hero-container">
-      {/* Navigation */}
-      <nav className="navbar">
-        <img src="/images/logo.png" alt="Sustainable Futures" className="logo" />
-        <ul className="nav-links">
-          <li>HOME</li>
-          <li>SHOP NOW</li>
-          <li>INVEST</li>
-          <li>CONTACT</li>
-        </ul>
-      </nav>
+    <div className="App">
+      {/* Hero Slider */}
+       {/* NAVBAR */}
+       <nav className="navbar">
+  <img src="/images/logo.png" alt="Sustainable Futures Logo" className="navbar-logo" />
+  <div className="nav-links">
+    <span>HOME</span>
+    <span>SHOP NOW</span>
+    <span>INVEST</span>
+    <span>CONTACT</span>
+  </div>
+</nav>
 
-      {/* Main Hero Section */}
-      <div className="hero-content">
-        <motion.div 
-          className="hero-text"
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <p className="intro-text">INTRODUCING!</p>
-          <h1 className="hero-title">SPOONIE BITES</h1>
-          <p className="hero-description">
-            Flavored Edible Spoons<br />
-            Made with a wholesome fusion of sorghum and rice flour
-          </p>
-          <div className="button-group">
-            <motion.button 
-              className="primary-btn"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              PRE-ORDER NOW
-            </motion.button>
-            <motion.button 
-              className="secondary-btn"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              LEARN MORE
-            </motion.button>
+      <Slider {...sliderSettings}>
+        {/* Slide 1: Spoonie Bites */}
+        <div className="hero-slide spoonie-slide">
+          <div className="hero-content">
+            <div className="hero-text">
+              <h4 className="tagline">INTRODUCING!</h4>
+              <h1 className="headline">SPOONIE BITES</h1>
+              <p className="subtext">
+                Edible spoons made to scoop up your favorite treats<br />
+                with no waste left behind
+              </p>
+              <div className="hero-buttons">
+                <button className="btn-primary">PRE-ORDER NOW</button>
+                <button className="btn-secondary">LEARN MORE</button>
+              </div>
+            </div>
+            <div className="hero-image">
+              <img src="/images/spoon5.png" alt="Spoonie Bites" />
+            </div>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div 
-          className="hero-image"
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img src="/images/spoon5.png" alt="Edible Spoon" />
-        </motion.div>
-      </div>
-
+        {/* Slide 2: Choco Crunch */}
+        <div className="hero-slide choco-slide">
+          <div className="hero-content">
+            <div className="hero-text">
+              <h4 className="tagline">INTRODUCING!</h4>
+              <h1 className="headline">CHOCO CRUNCH</h1>
+              <p className="subtext">
+                Flavored Edible Cups<br />
+                Made with a wholesome fusion of sorghum and rice flour
+              </p>
+              <div className="hero-buttons">
+                <button className="btn-primary">PRE-ORDER NOW</button>
+                <button className="btn-secondary">LEARN MORE</button>
+              </div>
+            </div>
+            <div className="hero-image">
+              <img src="/images/coof3.png" alt="Choco Crunch" />
+            </div>
+          </div>
+        </div>
+      </Slider>
+   
+ 
       {/* Features Section */}
       <section className="features-section">
         <h2 className="features-title">FEATURES:</h2>
