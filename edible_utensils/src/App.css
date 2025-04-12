@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #C0CDAF;
+}
+h1, h2, h3,.navbar,.hero-title {
+  font-family: 'Playfair Display', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px 30px; /* Reduced bottom space */
+  margin-bottom: 0;         /* REMOVE or set to 0 */
+  padding-bottom: 10px;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  height: 200px; /* Increased size */
+  width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #002c4f;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  padding-top: 0px; 
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 4rem 8rem;
+  gap: 2rem;
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 0;
+}
+
+/* Text Content */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* was center */
+  padding-top: 0; /* optional */
+  margin-top: 0;
+}
+
+.intro-text {
+  color: #3e6e3e;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #0d3457;
+  margin: 0.5rem 0 2rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #2d4d4d;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.hero-text p.intro-text {
+  margin-top: 0;
+}
+
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-btn {
+  background-color: #1b5e20;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #155a1f;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #1b5e20;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  color: #1b5e20;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.secondary-btn:hover {
+  background-color: #1b5e20;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Aligns image to left inside its box */
+  align-items: flex-start;
+  margin-left: 30rem; /* ⬅️ Pushes image right */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.hero-image img {
+  width: 100%;
+  max-width:600px;
+  height: auto;
+  object-fit: contain;
+}
+.hero-image-container {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+.hero-image-container img {
+  width: 100%;
+  display: block;
+}
+
+.hero-image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%; /* controls the gradient width */
+  background: linear-gradient(to left, #f1fbe9 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
   }
 }
