@@ -242,3 +242,155 @@ h1, h2, h3,.navbar,.hero-title {
   font-size: 0.95rem;
   color: #444;
 }
+
+/* Better Tomorrow Section */
+.better-tomorrow-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #d7e5c6, #e7edd7);
+  text-align: center;
+}
+
+.better-tomorrow-title {
+  font-size: 2rem;
+  color: #1d3b5f;
+  margin-bottom: 2rem;
+}
+
+.better-tomorrow-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 1.5rem;
+  width: 250px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.green-card {
+  background-color: #359259;
+}
+
+.brown-card {
+  background-color: #D4B895;
+}
+
+.blue-card {
+  background-color: #294D70;
+}
+
+.card-bar {
+  width: 60px;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-button {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.green-btn {
+  color: #2f9e44;
+}
+
+.brown-btn {
+  color: #7a5e42;
+}
+
+.blue-btn {
+  color: #1d3b5f;
+}
+.mission-section {
+  padding: 8rem 2rem;
+  background-color: #f7f9f3;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-content {
+  max-width: 1000px;
+  background-color: #c1d7ae;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  position: relative;
+  /* overflow removed to allow image to overflow */
+}
+
+.mission-text {
+  color: #1d3b5f;
+  max-width: 60%;
+  z-index: 1;
+}
+
+.mission-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mission-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.mission-image {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  z-index: 0;
+}
+
+.mission-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .mission-content {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .mission-text {
+    max-width: 50%;
+  }
+
+  .mission-image {
+    top: -40px;
+    right: -40px;
+  }
+
+  .mission-image img {
+    width: 350px;
+    height: 350px;
+  }
+}

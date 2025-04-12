@@ -18,7 +18,6 @@ function App() {
 
       {/* Main Hero Section */}
       <div className="hero-content">
-        {/* Text Section */}
         <motion.div 
           className="hero-text"
           initial={{ x: -50, opacity: 0 }}
@@ -49,7 +48,6 @@ function App() {
           </div>
         </motion.div>
 
-        {/* Spoon Image */}
         <motion.div 
           className="hero-image"
           initial={{ x: 50, opacity: 0 }}
@@ -101,7 +99,73 @@ function App() {
           </motion.div>
         </div>
       </section>
+
+      <section className="better-tomorrow-section">
+  <h2 className="better-tomorrow-title">Bite into a better tomorrow!</h2>
+  <div className="better-tomorrow-cards">
+    
+    {/* Card 1 */}
+    <motion.div 
+      className="card green-card"
+      whileHover={{ scale: 1.05 }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="card-bar"></div>
+      <img src="/images/sp.png" alt="Spoonie Bites" className="card-image" />
+      <h3 className="card-title">Spoonie Bites</h3>
+      <button className="card-button green-btn">TAKE A BITE</button>
+    </motion.div>
+
+    {/* Card 2 */}
+    <motion.div 
+      className="card brown-card"
+      whileHover={{ scale: 1.05 }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="card-bar"></div>
+      <img src="/images/COF.png" alt="ChocoCrunch" className="card-image" />
+      <h3 className="card-title">ChocoCrunch</h3>
+      <button className="card-button brown-btn">TAKE A BITE</button>
+    </motion.div>
+
+    {/* Card 3 */}
+    <motion.div 
+      className="card blue-card"
+      whileHover={{ scale: 1.05 }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
+      <div className="card-bar"></div>
+      <img src="/images/straw.png" alt="ScoopStraws" className="card-image" />
+      <h3 className="card-title">ScoopStraws</h3>
+      <button className="card-button blue-btn">TAKE A BITE</button>
+    </motion.div>
+
+  </div>
+</section>
+{/* Mission Section */}
+<section className="mission-section">
+  <div className="mission-content">
+    <div className="mission-text">
+      <h2>Sustainable choices start at the table</h2>
+      <p>
+        We are on a mission to reduce waste by creating edible cutlery that’s safe, 
+        tasty, and leaves nothing behind.
+      </p>
     </div>
+    <div className="mission-image">
+      <img src="/images/eco2.png" alt="Edible Cutlery and Coffee" />
+    </div>
+  </div>
+</section>
+
+    </div>
+    
   );
 }
 
