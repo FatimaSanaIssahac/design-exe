@@ -166,21 +166,36 @@ function App() {
 
   </div>
 </section>
-{/* Mission Section */}
 <section className="mission-section">
   <div className="mission-content">
-    <div className="mission-text">
+    
+    <motion.div
+      className="mission-text"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <h2>Sustainable choices start at the table</h2>
-      <p className="sustain">
+      <p>
         We are on a mission to reduce waste by creating edible cutlery that’s safe, 
         tasty, and leaves nothing behind.
       </p>
-    </div>
-    <div className="mission-image">
+    </motion.div>
+
+    <motion.div
+      className="mission-image"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <img src="/images/eco2.png" alt="Edible Cutlery and Coffee" />
-    </div>
+    </motion.div>
+
   </div>
 </section>
+
       {/* Footer Section */}
       <footer className="footer-section">
         <div className="footer-container">
