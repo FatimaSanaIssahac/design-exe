@@ -481,12 +481,13 @@ p{
   }
 
   .mission-text {
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .mission-image {
-    top: -40px;
-    right: -40px;
+    position: static;
+  margin-top: 2rem;
+  align-self: center;
   }
 
   .mission-image img {
