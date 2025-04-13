@@ -12,7 +12,7 @@ function App() {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -188,7 +188,7 @@ function App() {
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
+      viewport={{ once: false, amount: 0.3 }}
     >
       <img src="/images/eco2.png" alt="Edible Cutlery and Coffee" />
     </motion.div>
@@ -196,51 +196,55 @@ function App() {
   </div>
 </section>
 
-      {/* Footer Section */}
-      <footer className="footer-section">
-        <div className="footer-container">
+{/* Footer Section */}
+<footer className="footer-section">
+  <motion.div
+    className="footer-container"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: false, amount: 0.3 }}
+  >
 
-          {/* Left Side Links */}
-          <div className="footer-links">
-            <p>Terms and Conditions</p>
-            <p>Privacy Policy</p>
-          </div>
+    {/* Left Side Links */}
+    <div className="footer-links">
+      <p>Terms and Conditions</p>
+      <p>Privacy Policy</p>
+    </div>
 
-          {/* Right Side Social and Subscribe */}
-          <div className="footer-right">
-            
-            <h3>Be in the first to know</h3>
-            <div className="social-icons">
-              <i className="fab fa-linkedin"></i>
-              <i className="fab fa-facebook"></i>
-              <i className="fab fa-x-twitter"></i>
-              <i className="fab fa-instagram"></i>
-            </div>
+    {/* Right Side Social and Subscribe */}
+    <div className="footer-right">
+      <h3>Be in the first to know</h3>
+      <div className="social-icons">
+        <i className="fab fa-linkedin"></i>
+        <i className="fab fa-facebook"></i>
+        <i className="fab fa-x-twitter"></i>
+        <i className="fab fa-instagram"></i>
+      </div>
 
-            <div className="subscribe-form">
-              <div className="input-wrapper">
-              <form
-                  action="mailto:fatimasanaissahac25@gmail.com"
-                  method="post"
-                  encType="text/plain"
-                >
-                <input
-                type="email"
-                id="Email"
-                name="Email"
-                placeholder="Email Address"
-                required
-              />
-                <button type="submit">SUBSCRIBE</button>
-                </form>
-              </div>
-              <p className="subscribe-note">Get updates, coupons and news</p>
-            </div>
-          </div>
-
+      <div className="subscribe-form">
+        <div className="input-wrapper">
+          <form
+            action="mailto:fatimasanaissahac25@gmail.com"
+            method="post"
+            encType="text/plain"
+          >
+            <input
+              type="email"
+              id="Email"
+              name="Email"
+              placeholder="Email Address"
+              required
+            />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
         </div>
-      </footer>
+        <p className="subscribe-note">Get updates, coupons and news</p>
+      </div>
+    </div>
 
+  </motion.div>
+</footer>
     </div>
     
   );
