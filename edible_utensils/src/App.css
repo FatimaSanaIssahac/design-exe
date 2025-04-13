@@ -277,16 +277,17 @@ p{
   }
 
   .navbar-logo {
-    height: 100px; /* Smaller logo for small screens */
+    height: 150px; /* Smaller logo for small screens */
   }
 
   .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: rows;
+    gap: 1.2rem;
     width: 100%;
+    padding-left: 2rem;
   }
   .nav-links span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .features-section {
@@ -493,8 +494,9 @@ p{
   }
 
   .mission-image img {
-    width: 350px;
-    height: 350px;
+    width: 80vw;
+    max-width: 300px;
+    height: auto;
   }
 }
 .footer-section {
