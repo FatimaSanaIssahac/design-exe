@@ -478,10 +478,12 @@ p{
   .mission-content {
     flex-direction: column;
     padding: 2rem;
+    align-items: center;
   }
 
   .mission-text {
     max-width: 100%;
+    text-align: center;
   }
 
   .mission-image {
