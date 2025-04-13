@@ -11,14 +11,14 @@
 https://www.figma.com/design/8590evva9cqof92rzxqquk/edible-utensils?node-id=0-1&t=UFRDDrl5R3vFlaco-1
 
 ## **Hosted url**
-Add the link here
+https://design-exe-rho.vercel.app/
 
 ## **Installation**
-How on earth can we set up your project up and running?
+For coding install VS code, node.js and npm. For version control install git. For designing download figma
 
 ## **Steps to run**  
-Care to explain?
+clone the github repository to your local device and run npm start in the terminal
+
 
 ## **Acknowledgements**
-Give credit to any resources, tutorials, libraries helped you build your project.
-
+Framer library, chatgpt
