@@ -284,11 +284,11 @@ p{
     flex-direction: rows;
     gap: 1.2rem;
     width: 100%;
-    padding-left: 0.7rem;
+    padding-left: 1rem;
     padding-top: 0.7rem;
   }
   .nav-links span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 .features-section {
