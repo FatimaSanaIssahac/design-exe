@@ -1,14 +1,14 @@
 ![Untitled-3](design.png)
-# **[Project Name]**
+# **[Edible_utensils]**
 
 
 **DESIGN.EXE designathon 2025**
 
-> A short description of your project. Explain what your project does, what problem it solves, and why it's cool.
+> A website for a sustainability-focused company specializing in edible cutlery and utensils.
 
 
 ## **Link to figma file**
-Add the link here
+https://www.figma.com/design/8590evva9cqof92rzxqquk/edible-utensils?node-id=0-1&t=UFRDDrl5R3vFlaco-1
 
 ## **Hosted url**
 Add the link here
