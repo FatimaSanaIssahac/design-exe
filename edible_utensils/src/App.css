@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
   background: #C0CDAF;
 }
-h1, h2, h3,.navbar,.hero-title {
+h1, h2, h3,.navbar,.tagline,.headline {
   font-family: 'Playfair Display', serif;
+}
+p{
+  color: #98703e;
+  font-family: 'Lato', serif;
+  font-weight: 400;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 3rem;
+  justify-content:space-around;
+  padding: 1rem 4rem;
   background-color: #d2debe; /* matches your green background */
 }
 
@@ -23,7 +28,8 @@ h1, h2, h3,.navbar,.hero-title {
 
 .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .nav-links span {
@@ -45,7 +51,7 @@ h1, h2, h3,.navbar,.hero-title {
 /* Hero Section */
 .hero-slide {
   background: #d2debe;
-  padding: 4rem 2rem;
+  padding: 0rem 10rem;
 }
 
 .hero-content {
@@ -79,6 +85,8 @@ h1, h2, h3,.navbar,.hero-title {
   font-size: 1.1rem;
   color: #1d3557;
   margin-bottom: 2rem;
+  font-family: 'Lato', serif;
+  font-weight: 400;
 }
 
 .hero-buttons {
@@ -92,6 +100,7 @@ h1, h2, h3,.navbar,.hero-title {
   padding: 0.75rem 1.5rem;
   border: none;
   font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
   border-radius: 999px;
   cursor: pointer;
 }
@@ -102,6 +111,7 @@ h1, h2, h3,.navbar,.hero-title {
   color: #1d3557;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
   border-radius: 999px;
   cursor: pointer;
 }
@@ -228,7 +238,7 @@ h1, h2, h3,.navbar,.hero-title {
 .features-section {
   padding: 4rem 2rem;
   background-color: #f9fff4;
-  text-align: center;
+  text-align: left;
 }
 
 .features-title {
@@ -236,6 +246,7 @@ h1, h2, h3,.navbar,.hero-title {
   font-size: 2rem;
   color: #17642f;
   margin-bottom: 2rem;
+  margin-left: 4rem;
 }
 
 .features-container {
@@ -275,13 +286,14 @@ h1, h2, h3,.navbar,.hero-title {
 .better-tomorrow-section {
   padding: 4rem 2rem;
   background: linear-gradient(to bottom, #d7e5c6, #e7edd7);
-  text-align: center;
+  text-align: left;
 }
 
 .better-tomorrow-title {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #1d3b5f;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 4rem;
 }
 
 .better-tomorrow-cards {
@@ -339,6 +351,8 @@ h1, h2, h3,.navbar,.hero-title {
   padding: 0.5rem 1rem;
   border-radius: 999px;
   font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Playfair Display', serif;
   border: none;
   cursor: pointer;
 }
@@ -384,6 +398,9 @@ h1, h2, h3,.navbar,.hero-title {
 }
 
 .mission-text p {
+  color: #1d3b5f;
+  font-family: 'Lato', serif;
+  font-weight: 300;
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -424,7 +441,7 @@ h1, h2, h3,.navbar,.hero-title {
 }
 .footer-section {
   background-color: #c1d7ae;
-  padding: 3rem 2rem;
+  padding: 3rem 8rem;
   font-family: 'Georgia', serif;
   color: #1d3b5f;
 }
@@ -437,7 +454,8 @@ h1, h2, h3,.navbar,.hero-title {
   margin: 0 auto;
 }
 
-.footer-links {
+.footer-links p{
+  color: #1d3b5f;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

@@ -48,7 +48,7 @@ function App() {
               </div>
             </div>
             <div className="hero-image">
-              <img src="/images/spoon5.png" alt="Spoonie Bites" />
+              <img src="/images/frame2.png" alt="Spoonie Bites" />
             </div>
           </div>
         </div>
@@ -171,7 +171,7 @@ function App() {
   <div className="mission-content">
     <div className="mission-text">
       <h2>Sustainable choices start at the table</h2>
-      <p>
+      <p className="sustain">
         We are on a mission to reduce waste by creating edible cutlery that’s safe, 
         tasty, and leaves nothing behind.
       </p>
@@ -193,6 +193,7 @@ function App() {
 
           {/* Right Side Social and Subscribe */}
           <div className="footer-right">
+            
             <h3>Be in the first to know</h3>
             <div className="social-icons">
               <i className="fab fa-linkedin"></i>
@@ -203,8 +204,20 @@ function App() {
 
             <div className="subscribe-form">
               <div className="input-wrapper">
-                <input type="email" placeholder="Email Address" />
+              <form
+                  action="mailto:fatimasanaissahac25@gmail.com"
+                  method="post"
+                  encType="text/plain"
+                >
+                <input
+                type="email"
+                id="Email"
+                name="Email"
+                placeholder="Email Address"
+                required
+              />
                 <button type="submit">SUBSCRIBE</button>
+                </form>
               </div>
               <p className="subscribe-note">Get updates, coupons and news</p>
             </div>
