@@ -12,7 +12,7 @@ function App() {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -188,7 +188,7 @@ function App() {
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
+      viewport={{ once: false, amount: 0.3 }}
     >
       <img src="/images/eco2.png" alt="Edible Cutlery and Coffee" />
     </motion.div>
@@ -203,7 +203,7 @@ function App() {
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-    viewport={{ once: true }}
+    viewport={{ once: false, amount: 0.3 }}
   >
 
     {/* Left Side Links */}
