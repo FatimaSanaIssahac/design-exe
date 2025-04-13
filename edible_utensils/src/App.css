@@ -64,8 +64,8 @@ p{
 }
 
 .hero-text {
-  max-width: 100%;
-  flex: 1 1 100%;
+  flex: 1;
+  min-width: 300px;
 }
 
 .tagline {
@@ -214,6 +214,13 @@ p{
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+  .hero-text, .hero-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
 .hero-slide {
   padding: 2rem 1rem;
